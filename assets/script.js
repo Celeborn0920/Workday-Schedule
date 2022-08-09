@@ -10,9 +10,58 @@ function showTime() {
 setInterval(showTime, 1000)
 showTime();
 
-document.querySelector(".saveBtn").addEventListener("click", function(){
-  var textInput = document.querySelector("#input");
-  localStorage.setItem("saved-input", JSON.stringify(textInput));
-  console.log('You pressed save')
+
+document.getElementById("9amBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text9AM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("10amBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text10AM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("11amBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text11AM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("12pmBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text12PM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("1pmBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text1PM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("2pmBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text2PM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("3pmBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text3PM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("4pmBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text4PM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
+})
+
+document.getElementById("5pmBtn").addEventListener("click", function(){
+  var textInput = document.getElementById("text5PM");
+  localStorage.setItem("saved-input", JSON.stringify(textInput.value));
+  console.log('Testing: You pressed save')
 })
 
