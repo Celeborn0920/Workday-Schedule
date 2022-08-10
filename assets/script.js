@@ -2,6 +2,17 @@
 
 var dateElement = document.getElementById("Date");
 var buttonElement = document.getElementsByClassName("btn btn-primary btn-lg");
+var input9AM = document.getElementById("text9AM");
+var input10AM = document.getElementById("text10AM");
+var input11AM = document.getElementById("text11AM");
+var input12PM = document.getElementById("text12PM");
+var input1PM = document.getElementById("text1PM");
+var input2PM = document.getElementById("text2PM");
+var input3PM = document.getElementById("text3PM");
+var input4PM = document.getElementById("text4PM");
+var input5PM = document.getElementById("text5PM");
+
+
 
 function showTime() {
   var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
@@ -12,7 +23,7 @@ showTime();
 
 document.getElementById("9amBtn").addEventListener("click", function(){
   var textInput = document.getElementById("text9AM");
-  localStorage.setItem("saved-inpu-9am", JSON.stringify(textInput.value));
+  localStorage.setItem("saved-input-9am", JSON.stringify(textInput.value));
   console.log('Testing: You pressed save')
 })
 
@@ -64,3 +75,8 @@ document.getElementById("5pmBtn").addEventListener("click", function(){
   console.log('Testing: You pressed save')
 })
 
+function getData() {
+  
+}
+
+document.querySelector("text9AM").innerHTML("saved-input-9AM")
