@@ -13,7 +13,7 @@ var input4PM = document.getElementById("text4PM");
 var input5PM = document.getElementById("text5PM");
 
 
-
+// Function which when called will display the time and update every second
 function showTime() {
   var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
   document.getElementById("currentDay").innerHTML = currentTime
@@ -21,6 +21,7 @@ function showTime() {
 setInterval(showTime, 1000)
 showTime();
 
+// The following ~25 lines are event listeners for each save button and their corresponding text field, which then save the input to local storage.
 document.getElementById("9amBtn").addEventListener("click", function(){
   localStorage.setItem("saved-input-9am", JSON.stringify(input9AM.value));
 })
@@ -57,6 +58,7 @@ document.getElementById("5pmBtn").addEventListener("click", function(){
   localStorage.setItem("saved-input-5pm", JSON.stringify(input5PM.value));
 })
 
+// This function displays the user-input which was previously saved in local storage in the text fields. This way, when the browser is refreshed or closed, the input will remain.
 function getData() {
   input9AM.value = JSON.parse(localStorage.getItem("saved-input-9am"))
   input10AM.value = JSON.parse(localStorage.getItem("saved-input-10am"))
@@ -68,9 +70,11 @@ function getData() {
   input4PM.value = JSON.parse(localStorage.getItem("saved-input-4pm"))
   input5PM.value = JSON.parse(localStorage.getItem("saved-input-5pm"))
 }
-
+// Running the above function
 getData()
 
+
+// Added conditional statements regarding time. This allows for the color-coding depending on what time of day it is.
 if (moment().hour() === 9) {
   $('#td9AM').css("background-color","red")
 }
