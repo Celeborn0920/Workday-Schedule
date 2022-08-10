@@ -22,39 +22,39 @@ setInterval(showTime, 1000)
 showTime();
 
 // The following ~25 lines are event listeners for each save button and their corresponding text field, which then save the input to local storage.
-document.getElementById("9amBtn").addEventListener("click", function(){
+document.getElementById("9amBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-9am", JSON.stringify(input9AM.value));
 })
 
-document.getElementById("10amBtn").addEventListener("click", function(){
+document.getElementById("10amBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-10am", JSON.stringify(input10AM.value));
 })
 
-document.getElementById("11amBtn").addEventListener("click", function(){
+document.getElementById("11amBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-11am", JSON.stringify(input11AM.value));
 })
 
-document.getElementById("12pmBtn").addEventListener("click", function(){
+document.getElementById("12pmBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-12pm", JSON.stringify(input12PM.value));
 })
 
-document.getElementById("1pmBtn").addEventListener("click", function(){
+document.getElementById("1pmBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-1pm", JSON.stringify(input12PM.value));
 })
 
-document.getElementById("2pmBtn").addEventListener("click", function(){
+document.getElementById("2pmBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-2pm", JSON.stringify(input2PM.value));
 })
 
-document.getElementById("3pmBtn").addEventListener("click", function(){
+document.getElementById("3pmBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-3pm", JSON.stringify(input3PM.value));
 })
 
-document.getElementById("4pmBtn").addEventListener("click", function(){
+document.getElementById("4pmBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-4pm", JSON.stringify(input4PM.value));
 })
 
-document.getElementById("5pmBtn").addEventListener("click", function(){
+document.getElementById("5pmBtn").addEventListener("click", function () {
   localStorage.setItem("saved-input-5pm", JSON.stringify(input5PM.value));
 })
 
@@ -76,82 +76,82 @@ getData()
 
 // Added conditional statements regarding time. This allows for the color-coding depending on what time of day it is.
 if (moment().hour() === 9) {
-  $('#td9AM').css("background-color","red")
+  $('#td9AM').css("background-color", "red")
 }
 if (moment().hour() > 9) {
-  $('#td9AM').css("background-color","gray", "overflow", "hidden")
-}if (moment().hour() < 9) {
-  $('#td9AM').css("background-color","green")
+  $('#td9AM').css("background-color", "gray", "overflow", "hidden")
+} if (moment().hour() < 9) {
+  $('#td9AM').css("background-color", "green")
 }
 if (moment().hour() === 10) {
-  $('#td10AM').css("background-color","red")
+  $('#td10AM').css("background-color", "red")
 }
 if (moment().hour() > 10) {
-  $('#td10AM').css("background-color","gray")
+  $('#td10AM').css("background-color", "gray")
 }
 if (moment().hour() < 10) {
-  $('#td10AM').css("background-color","green")
+  $('#td10AM').css("background-color", "green")
 }
 if (moment().hour() === 11) {
-  $('#td11AM').css("background-color","red")
+  $('#td11AM').css("background-color", "red")
 }
 if (moment().hour() > 11) {
-  $('#td11AM').css("background-color","gray")
+  $('#td11AM').css("background-color", "gray")
 }
 if (moment().hour() < 11) {
-  $('#td11AM').css("background-color","green")
+  $('#td11AM').css("background-color", "green")
 }
 if (moment().hour() === 12) {
-  $('#td12PM').css("background-color","red")
+  $('#td12PM').css("background-color", "red")
 }
 if (moment().hour() > 12) {
-  $('#td12PM').css("background-color","gray")
+  $('#td12PM').css("background-color", "gray")
 }
 if (moment().hour() < 12) {
-  $('#td12PM').css("background-color","green")
+  $('#td12PM').css("background-color", "green")
 }
 if (moment().hour() === 13) {
-  $('#td1PM').css("background-color","red")
+  $('#td1PM').css("background-color", "red")
 }
 if (moment().hour() > 13) {
-  $('#td1PM').css("background-color","gray")
+  $('#td1PM').css("background-color", "gray")
 }
 if (moment().hour() < 13) {
-  $('#td1PM').css("background-color","green")
+  $('#td1PM').css("background-color", "green")
 }
 if (moment().hour() === 14) {
-  $('#td2PM').css("background-color","red")
+  $('#td2PM').css("background-color", "red")
 }
 if (moment().hour() > 14) {
-  $('#td2PM').css("background-color","gray")
+  $('#td2PM').css("background-color", "gray")
 }
 if (moment().hour() < 14) {
-  $('#td2PM').css("background-color","green")
+  $('#td2PM').css("background-color", "green")
 }
 if (moment().hour() === 15) {
-  $('#td3PM').css("background-color","red")
+  $('#td3PM').css("background-color", "red")
 }
 if (moment().hour() > 15) {
-  $('#td3PM').css("background-color","gray")
+  $('#td3PM').css("background-color", "gray")
 }
 if (moment().hour() < 15) {
-  $('#td3PM').css("background-color","green")
+  $('#td3PM').css("background-color", "green")
 }
 if (moment().hour() === 16) {
-  $('#td4PM').css("background-color","red")
+  $('#td4PM').css("background-color", "red")
 }
 if (moment().hour() > 16) {
-  $('#td4PM').css("background-color","gray")
+  $('#td4PM').css("background-color", "gray")
 }
 if (moment().hour() < 16) {
-  $('#td4PM').css("background-color","green")
+  $('#td4PM').css("background-color", "green")
 }
 if (moment().hour() === 17) {
-  $('#td5PM').css("background-color","red")
+  $('#td5PM').css("background-color", "red")
 }
 if (moment().hour() > 17) {
-  $('#td5PM').css("background-color","gray")
+  $('#td5PM').css("background-color", "gray")
 }
 if (moment().hour() < 17) {
-  $('#td5PM').css("background-color","green")
+  $('#td5PM').css("background-color", "green")
 }
