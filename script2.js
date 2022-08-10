@@ -1,9 +1,0 @@
-document.getElementById("#9AM").textContent = localStorage.getItem("input");
-document.getElementById("#10AM").textContent = localStorage.getItem("input");
-document.getElementById("#11AM").textContent = localStorage.getItem("input");
-document.getElementById("#12PM").textContent = localStorage.getItem("input");
-document.getElementById("#1PM").textContent = localStorage.getItem("input");
-document.getElementById("#2PM").textContent = localStorage.getItem("input");
-document.getElementById("#3PM").textContent = localStorage.getItem("input");
-document.getElementById("#4PM").textContent = localStorage.getItem("input");
-document.getElementById("#5PM").textContent = localStorage.getItem("input");
